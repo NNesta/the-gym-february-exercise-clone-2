@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="fixed inset-x-0 top-0 z-50 bg-white flex justify-between items-center px-14 h-[110px]">
      <Logo/>
-      <div className="flex items-center gap-10">
+      <div className="hidden md:flex items-center gap-10">
         <ul className="flex items-center gap-10">
           <li>
             <Link
@@ -49,6 +49,11 @@ menu
           </li>
         </ul>
         <Button link="login">Login</Button>
+      </div>
+      <div className="flex lg:hidden items-center gap-2 ">
+   <BiSearch/>
+   <hr className="h-[20px] w-[1px] bg-primary"/>
+   <span>Menu</span>
       </div>
     </div>
   );
