@@ -82,10 +82,10 @@ const QuickLinks = () => {
             src="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/1_333_800w_600h_n/public/2018-04/unto_rautio_aalto_unt9424_weblarge_jpg.jpg?h=0d9f7c6e&itok=blqBmH_o"
             alt=""
           />
-          <div className="pt-12 pb-12 pl-14 my-[66.35px]">
+          <div className="pt-12 pb-12 pl-14 my-[66px]">
             <Title>Campus - lively and thriving</Title>
             <p className="text-[18px] tracking-[0.15px] leading-[26px] mb-6">
-              Aalto University's campus in Otaniemi is a renewable and living
+              Aalto University campus in Otaniemi is a renewable and living
               environment for research, art, learning, entrepreneurship and
               housing. The campus area inspires people to collaborate, try out
               new ideas and innovate together.
@@ -94,7 +94,7 @@ const QuickLinks = () => {
               {[
                 {
                   title: "Explore our vibrant innovation ecosystem",
-                  link: "explore",
+                  link: "/explore",
                 },
                 { title: "Explore our campus", link: "explore" },
                 { title: "Book a space", link: "book" },
