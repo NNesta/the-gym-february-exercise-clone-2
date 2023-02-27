@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Hero from '@/components/sections/Hero';
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Hero/>
       </main>
     </>
   )
