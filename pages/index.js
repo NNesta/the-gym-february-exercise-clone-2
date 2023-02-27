@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Hero from '@/components/sections/Hero';
+import Spotlight from '@/components/sections/Spotlight';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
       <Hero/>
+      <Spotlight/>  
       </main>
     </>
   )

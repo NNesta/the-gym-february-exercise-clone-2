@@ -1,9 +1,8 @@
 import React from 'react'
-import { styles } from '@/styles/Home.module.css';
 
 const Wrapper = ({children,styles}) => {
   return (
-    <div className={`max-w-[1540px] mx-auto ${styles}`}>
+    <div className={`w-full max-w-[1540px] mx-auto px-20 ${styles}`}>
         {children}
     </div>
   )

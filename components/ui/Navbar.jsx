@@ -3,16 +3,13 @@ import Link from "next/link";
 import { BiLockAlt, BiSearch } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
 import { IoGlobeSharp } from "react-icons/io5";
+import Logo from "./Logo";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="fixed inset-x-0 top-0 flex justify-between items-center mx-14 h-[110px]">
-      <div className="group">
-        <h1 className='text-5xl font-bold group-hover:after:content-["\""] after:content-["?"]'>
-          A
-        </h1>
-        <h4>Aalto University</h4>
-      </div>
+    <div className="fixed inset-x-0 top-0 z-50 bg-white flex justify-between items-center px-14 h-[110px]">
+     <Logo/>
       <div className="flex items-center gap-10">
         <ul className="flex items-center gap-10">
           <li>
@@ -51,7 +48,7 @@ menu
             <span>Menu</span>
           </li>
         </ul>
-        <Link href="login">Login</Link>
+        <Button link="login">Login</Button>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from '../ui/Button';
 
 const Spotlight = () => {
   return (
@@ -8,7 +9,7 @@ const Spotlight = () => {
         <p>Find more current news and interesting events on the News and events page.</p>  
         </div>
 
-        <button>See all Aalto University news</button>
+        <Button link="news">See all Aalto University news</Button>
         </div>
   )
 }
