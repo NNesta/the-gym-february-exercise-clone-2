@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const ActivityCard = ({image, description}) => {
+const ActivityCard = ({ image, description }) => {
   return (
     <div className="">
-      <img classname="" src={image} alt="" />
+      <img className="" src={image} alt="" />
       <p className="p-2">{description}</p>
     </div>
-  )
-}
+  );
+};
 
-export default ActivityCard
+export default ActivityCard;

@@ -2,27 +2,39 @@ import React from "react";
 import Wrapper from "../ui/Wrapper";
 import Title from "../ui/Title";
 import Link from "next/link";
-import { HiOutlinePencil } from "react-icons/hi";
-import { AiOutlineFolder } from "react-icons/ai";
-import { BiPhone } from "react-icons/bi";
 import InformationCard from "../ui/InformationCard";
 
 const QuickLinks = () => {
   return (
     <Wrapper>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center my-20">
         <Title>Important quicklinks</Title>
-        <div className="grid lg:grid-cols-3">
-          <div className="flex gap-4 items-center">
-            <HiOutlinePencil className="h-12 w-12 p-1 text-primary rounded-full bg-[#ffcd00]" />
+        <div className="flex flex-col lg:flex-row w-full justify-between ">
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px) text-center mb-4">
+            <img
+              className="rounded-full"
+              src="/assets/pen.png"
+              alt=""
+              srcset=""
+            />
             <h3 className="text-[21px] leading-[25px]">For personnel</h3>
           </div>
-          <div className="flex gap-4 items-center">
-            <AiOutlineFolder className="h-12 w-12 p-1 text-primary rounded-full bg-[#ffcd00]" />
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4">
+            <img
+              className="rounded-full"
+              src="/assets/folder.png"
+              alt=""
+              srcset=""
+            />
             <h3 className="text-[21px] leading-[25px]">Aalto Handbook</h3>
           </div>
-          <div className="flex gap-4 items-center">
-            <BiPhone className="h-12 w-12 p-1 text-primary rounded-full bg-[#ffcd00]" />
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4">
+            <img
+              className="rounded-full"
+              src="/assets/phone.png"
+              alt=""
+              srcset=""
+            />
             <h3 className="text-[21px] leading-[25px]">Safety</h3>
           </div>
         </div>
@@ -101,10 +113,10 @@ const QuickLinks = () => {
               ].map((item, index) => (
                 <li key={index}>
                   <Link
-                    className="flex items-center group text-[18px] leading-[22px] pl-6 mb-4 "
+                    className="flex items-center group text-[18px] leading-[22px] pl-8 mb-4 "
                     href={item.link}
                   >
-                    <span class="material-symbols-outlined group-hover:translate-x-2">
+                    <span class="material-symbols-outlined group-hover:translate-x-1">
                       arrow_right_alt
                     </span>
                     <span className="underline">{item.title}</span>
@@ -133,10 +145,10 @@ const QuickLinks = () => {
               ].map((item, index) => (
                 <li key={index}>
                   <Link
-                    className="flex items-center group text-[18px] leading-[22px] pl-6 mb-4 "
+                    className="flex items-center group text-[18px] leading-[22px] pl-8 mb-4 "
                     href={item.link}
                   >
-                    <span class="material-symbols-outlined group-hover:translate-x-2">
+                    <span class="material-symbols-outlined group-hover:translate-x-1">
                       arrow_right_alt
                     </span>
                     <span className="underline">{item.title}</span>

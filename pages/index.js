@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Hero from '@/components/sections/Hero';
-import Spotlight from '@/components/sections/Spotlight';
-import Explore from '@/components/sections/Explore';
-import Follow from '@/components/sections/Follow';
-import Information from '@/components/sections/Information';
-import ActivitySection from '@/components/sections/ActivitySection';
-import QuickLinks from '@/components/sections/QuickLinks';
-import Reasearch from '@/components/sections/Reasearch';
-import Study from '@/components/sections/Study';
-import Event from '@/components/sections/Event';
+import Head from "next/head";
+import Hero from "@/components/sections/Hero";
+import Spotlight from "@/components/sections/Spotlight";
+import Explore from "@/components/sections/Explore";
+import Follow from "@/components/sections/Follow";
+import Information from "@/components/sections/Information";
+import ActivitySection from "@/components/sections/ActivitySection";
+import QuickLinks from "@/components/sections/QuickLinks";
+import Reasearch from "@/components/sections/Reasearch";
+import Study from "@/components/sections/Study";
+import Event from "@/components/sections/Event";
 export default function Home() {
   return (
     <>
@@ -19,17 +19,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <Hero/>
-      <QuickLinks/>
-      <Spotlight/>
-      <Event/>
-      {/* <Explore/>  */}
-      <ActivitySection/>
-      <Study/>
-      <Information/> 
-      <Reasearch/>
-      <Follow/>
+        <Hero />
+        <QuickLinks />
+        <Spotlight />
+        <Event />
+        <Explore />
+        <ActivitySection />
+        <Study />
+        <Information />
+        <Reasearch />
+        <Follow />
       </main>
     </>
-  )
+  );
 }

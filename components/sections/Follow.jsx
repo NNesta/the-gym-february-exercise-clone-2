@@ -1,15 +1,16 @@
 import React from "react";
 import Wrapper from "../ui/Wrapper";
 import Link from "next/link";
+import Title from "../ui/Title";
 
 const Follow = () => {
   return (
     <div className="bg-[#FFCD00] min-h-[400px]">
       <Wrapper>
         <div className="py-[120px]">
-          <h1 className="text-[75px] leading-22 text-center font-bold">
+          <Title styles="text-[75px] leading-22 text-center font-bold">
             Follow us
-          </h1>
+          </Title>
           <ul className="flex flex-col lg:flex-row items-center justify-center gap-6">
             {[
               { title: "facebook", link: "facebook" },

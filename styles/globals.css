@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
     @apply text-primary
 }
+
+/* * {
+    border: 1px solid red;
+} */

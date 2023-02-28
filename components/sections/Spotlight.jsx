@@ -7,7 +7,7 @@ import Title from "../ui/Title";
 const Spotlight = () => {
   return (
     <Wrapper styles="my-16">
-      <div className="flex items-center justify-between ">
+      <div className="flex flex-col lg:flex-row items-center justify-between ">
         <div className="my-8">
           <Title>Spotlight</Title>
           <p className="text-[21px] leading-[25px] -bold">

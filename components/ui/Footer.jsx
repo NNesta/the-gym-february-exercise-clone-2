@@ -12,7 +12,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <Wrapper>
-      <div className="grid lg:grid-cols-4 justify-between border-y-2 border-primary py-6 my-12">
+      <div className="grid lg:grid-cols-4 gap-6 justify-between border-y-2 border-primary py-6 mt-12">
         <div>
           <Logo />
           <div className="text-[18px] tracking-[0.15px] leading-[26px]">
