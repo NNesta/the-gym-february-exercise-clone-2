@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1920px] lg:grid grid-cols-[80px_680px_1fr_80px] grid-rows-[400px_280px_50px] mx-auto mt-[110px]">
+    <div className="max-w-[1920px] lg:grid grid-cols-[80px_680px_1fr_80px] grid-rows-[400px_300px_50px] mx-auto mt-[110px]">
       <div className="col-start-2 col-end-2 row-start-2 row-end-4 z-20 bg-primary text-white py-6 px-10">
         <h1 className="text-[36px] leading-[42px] mb-4">
           How tech is transforming diagnostics and care
@@ -34,6 +34,20 @@ const Hero = () => {
             </li>
           ))}
         </ul>
+        <div className="flex items-center justify-between">
+          <span class="material-symbols-outlined  p-[1px] rounded-full border-2 border-white">
+            chevron_right
+          </span>
+          <div className="flex items-center gap-4">
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-4 h-4 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+          </div>
+          <span class="material-symbols-outlined p-[1px] rounded-full border-2 border-white">
+            chevron_right
+          </span>
+        </div>
       </div>
       <div className="col-start-1 col-end-5 row-start-1 row-end-3">
         <img
