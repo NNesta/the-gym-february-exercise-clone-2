@@ -85,20 +85,20 @@ const Navbar = () => {
           <div className="w-full fixed inset-0 z-30 bg-black opacity-75"></div>
           <div className="fixed top-[110px] inset-y-0 overflow-x-scroll right-0 w-full max-w-[1350px] m-0 bg-white z-[500]">
             <div className="flex justify-between w-full items-center px-4">
-              <div className="flex gap-4 items-center">
-                <div className="flex flex-col items-center">
+              <div className="flex gap-4 items-center py-4">
+                <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
                   <CgMenuGridR size={40} />
                   <span>Services</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
                   <TfiMenuAlt size={40} />
                   <span>Site index</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
                   <SlGraduation size={40} />
                   <span>Student guide</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
                   <HiPencilAlt size={40} />
                   <span>Apply to Aalto</span>
                 </div>
@@ -395,7 +395,7 @@ const Navbar = () => {
                         return JSON.stringify(prevDataArray);
                       })
                     }
-                    className="flex justify-between items-center w-full text-[28px] leading-[33px] py-6 pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
+                    className="flex justify-between items-center w-full text-[28px] leading-[33px] pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
                   >
                     <span className="">{item.title}</span>
                     {JSON.parse(currentData).includes(item.title) ? (
