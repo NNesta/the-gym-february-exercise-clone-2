@@ -8,7 +8,10 @@ const FooterCard = ({ title, contents }) => {
       <ul className="flex flex-col gap-2">
         {contents.map((item, index) => (
           <li key={index}>
-            <Link className="leading-[19px] underline" href={item.link}>
+            <Link
+              className="leading-[19px] underline hover:bg-[#e3e3e3]"
+              href={item.link}
+            >
               {item.title}
             </Link>
           </li>

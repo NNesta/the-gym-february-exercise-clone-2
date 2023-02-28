@@ -20,9 +20,9 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <QuickLinks />
         <Spotlight />
         <Event />
+        <QuickLinks />
         <Explore />
         <ActivitySection />
         <Study />

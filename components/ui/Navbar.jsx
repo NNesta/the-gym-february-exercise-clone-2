@@ -13,6 +13,14 @@ import { HiPencilAlt } from "react-icons/hi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentData, setCurrentData] = useState(JSON.stringify([]));
+  const [shrankings, setShrankings] = useState(false);
+  useEffect(() => {
+    const shrink = () => {
+      console.log(window.scrollY);
+      window.scrollY >= 200 ? setShrankings(true) : setShrankings(false);
+    };
+    window.addEventListener("scroll", shrink);
+  }, []);
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -22,8 +30,12 @@ const Navbar = () => {
   }, [isOpen]);
   return (
     <div className="">
-      <div className="fixed inset-x-0 top-0 z-50 bg-white flex justify-between items-center px-14 h-[110px]">
-        <Logo />
+      <div
+        className={`fixed  inset-x-0 top-0 z-50 border-b-2 border-primary bg-white flex justify-between items-center px-14 duration-300 ease-in-out ${
+          shrankings ? "h-12" : "h-[110px]"
+        }`}
+      >
+        <Logo small={shrankings} />
         <div className="hidden md:flex items-center gap-10">
           <ul className="flex items-center gap-10">
             <li>
@@ -83,7 +95,11 @@ const Navbar = () => {
       {isOpen && (
         <div className="w-full">
           <div className="w-full fixed inset-0 z-30 bg-black opacity-75"></div>
-          <div className="fixed top-[110px] inset-y-0 overflow-x-scroll right-0 w-full max-w-[1350px] m-0 bg-white z-[500]">
+          <div
+            className={`fixed ${
+              shrankings ? "top-[48px]" : "top-[110px]"
+            } inset-y-0 overflow-x-scroll right-0 w-full max-w-[1350px] m-0 bg-white z-[500]`}
+          >
             <div className="flex justify-between w-full items-center px-4">
               <div className="flex gap-4 items-center py-4">
                 <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
@@ -395,7 +411,7 @@ const Navbar = () => {
                         return JSON.stringify(prevDataArray);
                       })
                     }
-                    className="flex justify-between items-center w-full text-[28px] leading-[33px] pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
+                    className="flex justify-between h-20 items-center w-full text-[28px] leading-[33px] pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
                   >
                     <span className="">{item.title}</span>
                     {JSON.parse(currentData).includes(item.title) ? (

@@ -7,7 +7,7 @@ const Follow = () => {
   return (
     <div className="bg-[#FFCD00] min-h-[400px]">
       <Wrapper>
-        <div className="py-[120px] flex flex-col items-center">
+        <div className="py-[120px] flex flex-col gap-8 items-center">
           <Title styles="text-[75px] leading-22 text-center font-bold">
             Follow us
           </Title>

@@ -10,32 +10,38 @@ const QuickLinks = () => {
       <div className="flex flex-col items-center my-20">
         <Title>Important quicklinks</Title>
         <div className="flex flex-col lg:flex-row w-full justify-between ">
-          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px) text-center mb-4">
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px) text-center mb-4 group">
             <img
               className="rounded-full"
               src="/assets/pen.png"
               alt=""
               srcset=""
             />
-            <h3 className="text-[21px] leading-[25px]">For personnel</h3>
+            <h3 className="text-[21px] leading-[25px] group-hover:bg-[#e3e3e3]">
+              For personnel
+            </h3>
           </div>
-          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4">
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4 group">
             <img
               className="rounded-full"
               src="/assets/folder.png"
               alt=""
               srcset=""
             />
-            <h3 className="text-[21px] leading-[25px]">Aalto Handbook</h3>
+            <h3 className="text-[21px] leading-[25px] group-hover:bg-[#e3e3e3]">
+              Aalto Handbook
+            </h3>
           </div>
-          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4">
+          <div className="flex gap-4 items-center calc(33.3333% - 37.3333px)  text-center mb-4 group">
             <img
               className="rounded-full"
               src="/assets/phone.png"
               alt=""
               srcset=""
             />
-            <h3 className="text-[21px] leading-[25px]">Safety</h3>
+            <h3 className="text-[21px] leading-[25px] group-hover:bg-[#e3e3e3]">
+              Safety
+            </h3>
           </div>
         </div>
       </div>
@@ -113,7 +119,7 @@ const QuickLinks = () => {
               ].map((item, index) => (
                 <li key={index}>
                   <Link
-                    className="flex items-center group text-[18px] leading-[22px] pl-8 mb-4 "
+                    className="flex items-center group text-[18px] leading-[22px]  mb-4 hover:bg-[#e3e3e3] w-fit"
                     href={item.link}
                   >
                     <span class="material-symbols-outlined group-hover:translate-x-1">
@@ -145,7 +151,7 @@ const QuickLinks = () => {
               ].map((item, index) => (
                 <li key={index}>
                   <Link
-                    className="flex items-center group text-[18px] leading-[22px] pl-8 mb-4 "
+                    className="flex items-center group text-[18px] leading-[22px] w-fit mb-4 hover:bg-[#e3e3e3]"
                     href={item.link}
                   >
                     <span class="material-symbols-outlined group-hover:translate-x-1">

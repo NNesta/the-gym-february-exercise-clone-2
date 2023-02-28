@@ -1,13 +1,17 @@
 import React from "react";
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = ({ small }) => {
   return (
-    <Link href="/" className="group">
-      <h1 className='text-5xl font-bold group-focus:after:content-["!"] group-hover:after:content-["\""] after:content-["?"]'>
+    <Link href="/" className="font-[900] group cursor-pointer relative z-[500]">
+      <h1
+        className={`${
+          small ? "text-xl" : "text-5xl"
+        } text- group-focus:after:content-["!"] group-hover:after:content-["\""] after:content-["?"]`}
+      >
         A
       </h1>
-      <h4>Aalto University</h4>
+      <h4 className={`${small ? "text-xs" : "text-base"}`}>Aalto University</h4>
     </Link>
   );
 };
